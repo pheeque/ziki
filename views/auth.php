@@ -1,7 +1,3 @@
-<?php
-require_once './Authentication/auth/googleinit.php';
-require_once './Authentication/auth/facebookinit.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 

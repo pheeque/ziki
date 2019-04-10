@@ -16,7 +16,7 @@
     <main class="motuns-main-container">
         <section class="motuns-side-bar">
             <h3 class="homepage-link">
-                <a href="./timeline.php">Homepage</a>
+                <a href="?page=timeline">Homepage</a>
             </h3>
             <p class="">
                 Profile

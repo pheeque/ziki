@@ -1,9 +1,3 @@
-<?php
-require_once 'Authentication/auth/googleinit.php';
-
-print_r($_SESSION);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
