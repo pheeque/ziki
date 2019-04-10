@@ -32,6 +32,8 @@ OR
 ### 
 
 ## Application Architecture
+*This documentation is a work-in-progress and so doesn't outline everything about the architecture. Send me a message on slack @pheeque if you have just about any question whatsoever or something is not quite clear.*
+
 The application uses a Model-View-Controller(MVC) pattern.
 
 ### Flow
@@ -69,7 +71,12 @@ All assets required by the views should be located in the `assets` directory. Th
 All uploaded images, cached files, temporary items that are build/server specific should be placed in the `storage` directory
 
 ### Composer/Vendor Directory
-An important benefit of a the MVC approach is that it centralizes the vendor directory. This way you can just include your dependencies in the `composer.json` file situated in the root directory and run `composer install` to install them.  
+An important benefit of the MVC approach is that it centralizes the vendor directory. This way you can just include your dependencies in the `composer.json` file situated in the root directory and run `composer install` to install them.  
 
 ### Deployment
 Every deploy should trigger a `composer install` to include any new dependencies the app might require since the vendor directory is no longer tracked by git.
+
+### Roadmap
+Trade-offs were made in order to get to alpha as soon as possible. They will be rectified and built upon with time. Things like:  
+- Pretty URLs  
+- The use of php includes/requires of functions instead of autoloading of classes with composer.
