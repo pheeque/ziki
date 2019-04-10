@@ -42,8 +42,9 @@ A controller can display a HTML view by including the file containing the html.
 All view files are located inside the `views` directory.
 
 ### Example
-When a user wants to visit their timeline which displays the user's posts, they go to `https://ziki.hng.tech/?page=timeline`.  
-What happens next is that their 
+When a user wants to visit the timeline page which displays their posts, they go to `https://ziki.hng.tech/?page=timeline`.  
+The router sees the page parameter in the query string and passes control to the timeline controller in the controllers directory.  
+The timeline controller then registers the variables it needs to the view to show/use. After which it displays the corresponding view situated in the views directory.
 
 ### Current pages/links, their controllers and their views
 Page |Link | Controller | View|
